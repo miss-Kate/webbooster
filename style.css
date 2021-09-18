@@ -1,0 +1,130 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.content{
+    font-size: 16px;
+    width: 200px;
+    text-align: center;
+}
+
+.content > img{
+    font-size: 16px;
+    width: 140px;
+    height: 200px;
+}
+.price{
+    margin-bottom: 15px;
+}
+.btn{
+    height: 29px;
+    width: 110px;
+    background-color: rgb(208, 58, 128);
+    border: none;
+    border-radius: 15px;
+    color: #fbfbfc;
+    cursor: pointer;
+}
+
+
+.popup > input{
+    width: 300px;
+    height: 25px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+}
+.text{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #cfd0d3;
+    margin-bottom: 5px;
+}
+.popup input:focus {
+    border-bottom: 1px solid #e60c79;
+}
+
+.popup input:focus + .text {
+    color: #e60c79;
+}
+.popup button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #e60c79;
+    background: #e60c79;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all;
+}
+
+
+.popup button:hover {
+    background: #fff;
+    color:#e60c79;
+    transition: 0.5s all;
+}
+
+.popup_Bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    
+}
+.popup_Bg.active{
+    opacity: 1; 
+    pointer-events: all;
+    transition: 0.5s all;
+}
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 400px;
+    padding: 25px;
+    transition: 0.5s all
+}
+.popup.active{ 
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+.close{
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.container_two{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.article > img {
+    width: 100%;
+    height: 200px;
+}
+.atention{
+    font-size: 24px;
+    color: red;
+    font-family: initial;
+}
+
+
